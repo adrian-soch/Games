@@ -1,14 +1,14 @@
 # Games
-Assorted C++ Games developed to practise OOP, C++ Libraries, and genral programming.
+Assorted C++ Games developed to practise OOP, C++ Libraries, and general programming.
 
-## Hangman
-- under development
+### [Hangman](https://github.com/adrian-soch/Games/tree/master/hangman)
 - command-line based game
+- under development
 
-## Lumberjack
+### [Lumberjack](https://github.com/adrian-soch/Games/tree/master/lumberjack)
 - from LinkedIn Learning Tutorial: C++ Game Programming 1
-- uses Simple and Fast Multimedia Library [SFML](https://www.sfml-dev.org/)
+- uses Simple and Fast Multimedia Library ([SFML](https://www.sfml-dev.org/))
 - optimizations and personalization to follow
 
-## More to come
+#### More to come
 
