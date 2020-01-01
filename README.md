@@ -10,5 +10,8 @@ Assorted C++ Games developed to practise OOP, C++ Libraries, and general program
 - uses Simple and Fast Multimedia Library ([SFML](https://www.sfml-dev.org/))
 - optimizations and personalization to follow
 
-#### More to come
+### [ZombieSurvival](https://github.com/adrian-soch/Games/tree/master/zombie/zombie)
+- from LinkedIn Learning Tutorial: C++ Game Programming 1
+- under development
+
 
