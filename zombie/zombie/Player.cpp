@@ -1,3 +1,4 @@
+#include "stdafx.h"
 #include "Player.h"
 
 Player::Player()
@@ -62,7 +63,7 @@ Vector2f Player::getCenter()
 
 float Player::getRotation()
 {
-	return m_Sprite.getRotation;
+	return m_Sprite.getRotation();
 }
 
 Sprite Player::getSprite()
