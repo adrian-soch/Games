@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+/zombie/zombie.VC.VC.opendb
+/zombie/zombie.VC.db
+/zombie/zombie/zombie.vcxproj
+/zombie/zombie/zombie.vcxproj.filters
+/zombie/.vs/zombie/v14
+/zombie/ipch/ZOMBIE-d3f2bfb
