@@ -4,6 +4,7 @@
 #include "stdafx.h"
 #include <SFML/Graphics.hpp>
 #include "Player.h"
+#include "Arena.h"
 
 using namespace sf;
 
@@ -27,6 +28,10 @@ int main()
 
 	Player player;
 	IntRect arena;
+
+	VertexArray background;
+	Texture textureBackground;
+	textureBackground.loadFromFile("graphics/background_sheet.png");
 	
 	while (window.isOpen()) {
 		//###################################
@@ -60,8 +65,10 @@ int main()
 			}
 		} // End Events
 
+		// Player Quits
+		if (Keyboard::isKeyPressed(Keyboard::Escape)) { window.close(); }
+
 		// Player Movement %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-		if (Keyboard::isKeyPressed(Keyboard::Escape)){window.close();}
 
 		if (state == State::PLAYING)
 		{
@@ -108,13 +115,15 @@ int main()
 				state = State::PLAYING;
 			}
 
-			if (state == State::PLAYING) {
+			if (state == State::PLAYING) 
+			{
 				arena.width = 500;
 				arena.height = 500;
 				arena.top = 0;
 				arena.left = 0;
 
-				int tileSize = 50;
+
+				int tileSize = createBackground(background, arena);
 				player.spawn(arena, resolution, tileSize);
 				clock.restart();
 
@@ -149,6 +158,7 @@ int main()
 			window.clear();
 			window.setView(mainView);
 
+			window.draw(background, &textureBackground);
 			window.draw(player.getSprite());
 		}
 
